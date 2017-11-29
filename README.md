@@ -47,7 +47,7 @@ B(c: 2) // OK
 
 ## Required
 - A `Required` initialiser ensure that a class and all its sub-classes can be initialised with that init
-- A has an required initialiser a1
+- Class A has an required initialiser a1
 
 ```
 class A {
@@ -56,9 +56,9 @@ class A {
 }
 ```
 
-- B inherits A and has its own designated initialiser b, so that, all the intialisers from A will be ignored
+- Class B inherits class A and has its own designated initialiser b, so that, all the intialisers from class A will be ignored
 -> Conflict!!!
-Therefore, all the required initalisers from A must be implemented in B; otherwise, there will be compile error.
+Therefore, all the required initalisers in class A must be implemented in class B; otherwise, there will be compile errors.
 
 ```
 class B: A {
