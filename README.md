@@ -58,7 +58,7 @@ class A {
 
 - Class B inherits class A and has its own designated initialiser b, so that, all the intialisers from class A will be ignored
 -> Conflict!!!
-Therefore, all the required initalisers in class A must be implemented in class B; otherwise, there will be compile errors.
+- Therefore, all the required initalisers in class A must be implemented in class B; otherwise, there will be compile errors.
 
 ```
 class B: A {
