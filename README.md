@@ -1,4 +1,4 @@
-# Swift initialisation: Required vs Designated vs Convenience init
+# Swift initialisation: Required vs Designated vs Convenience
 
 ## Designated
 - Desginated intialisers are primary intialisers for a class.
@@ -81,7 +81,7 @@ Or, we can change the initialiser b to `convenience`
 - A convenience initializer must ultimately call a designated initializer.
 ```
 - (1) means a convenience initialiser can call another convenience or designated intialier from the same class level (absolutely not from its superclass)
-- (2) means convenience init call another and that another call another and so on; but there is an convenience initialiser in that chain finally call an designated intilisers:
+- (2) means convenience initialiser call another and that another call another and so on; but there always is an convenience initialiser in that chain finally calls a designated initilisers:
 
 ```
 ConI_1 -> ConI_2 -> ... -> ConI_n -> DesI // expected
