@@ -14,8 +14,8 @@ A designated initializer must call a designated initializer from its immediate s
 
 ```
 class A {
-	init(a: Int, b: Int) {}
-	init(c: Int) {}
+	init(a: Int, b: Int) {} // a1
+	init(c: Int) {} // a2
 }
 ```
 
@@ -24,7 +24,7 @@ class A {
 
 ```
 class B: A {
-	init(d: Int) { super.init() }
+	init(d: Int) { super.init() } // b
 }
 
 B(d: 1)
