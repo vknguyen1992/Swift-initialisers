@@ -3,7 +3,7 @@
 ## Designated
 - Desginated intialisers are primary intialisers for a class.
 - They fully initialise all properties introduced in that class.
-- They call an appropriate super intialiser to initialise all remaining properties in super its superclass.
+- They call an appropriate super intialiser to initialise all remaining properties in its superclass.
 
 ```
 A designated initializer must call a designated initializer from its immediate superclass.
