@@ -89,7 +89,7 @@ ConI_1 -> ConI_2 -> ... -> ConI_n -> ConI_1 // failed
 ```
 
 - When a class only has `convenience` initialisers, initialisers from its superclass are usable.
-- Therefore, when super class has `required` initialisers and you don't want reimplement them all in super class, you use `convenience` intialisers.
+- Therefore, when super class has `required` initialisers and you don't want reimplement them all in sub-class, you use `convenience` intialisers.
 
 ```
 class A {
